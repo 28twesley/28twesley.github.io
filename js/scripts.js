@@ -16,6 +16,7 @@ if (stylemode == 'dark') {
 
 //common event
 function switchmode() {
+
         //conditional statement with else branch
         if (stylemode == 'light') {
             stylemode = 'dark'
@@ -36,3 +37,25 @@ function showhide() {
         toolbarbuttons.style.display = 'block';
     }
 }
+
+let clickCountDisplay;
+
+function setupClickCounter() {
+    clickCountDisplay = document.getElementById('clickCount');
+    if (!clickCountDisplay) {
+        //Create a clickCount div
+        clickCountDisplay = document.createElement('div');
+        clickCountDisplay.id = 'clickCount';
+        document.body.appendChild(clickCountDisplay);
+    }
+    let clickCount = localStorage.getItem('clickCount') || 0;
+    clickCountDisplay.textContent = 'Clicks: ' + clickCount;
+
+    document.addEventListener('click', function() {
+        clickCount++;
+        localStorage.setItem('clickCount', clickCount);
+        clickCountDisplay.textContent = 'Clicks: ' + clickCount;
+    });
+}
+
+window.onload = setupClickCounter;

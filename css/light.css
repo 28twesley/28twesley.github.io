@@ -1,11 +1,11 @@
-a, a:visited{
+#buttons, #buttons:visited{
     border: 1px solid black;
     color: #000;
     padding: 4px;
     border-radius: 8px;
     text-decoration: none;
 }
-a:hover{
+.buttons:hover{
     background-color: #FF00FF;
 }
 

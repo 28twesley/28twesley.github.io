@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my super amazing website</title>
-    <link id="style" rel="stylesheet" href="css/light.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="style" rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
 </head>
-<script src="js/scripts.js"></script>
+<style>
+    #hamburger{
+        transition-duration: 1s;
+    }
+</style>
 <body>
     <div id="toolbar">
         <div id="buttons">
             <a href="index.html">Home</a> |
-            <a href="about.html">About</a>
-            <a href="#" onclick="switchmode()">Mode</a>
-            <a href="game/index.html">Get to School</a>
+            <a href="about.html">About</a> |
+            <a href="#" onclick="switchmode()">Mode</a> |
+            <a href="game/index.html">Get to School</a> &nbsp;
         </div>
-        <a href="#" onclick="showhide()">☰</a>
+        <div id="hamburger">
+            &nbsp;<a href="#" onclick="showhide(), move()",>☰</a>
+        </div>
     </div>
+        <h1 id="welcome">Hello! Welcome to my super duper amazing website!</h1>
+        <h2 id="find">have fun chasing the menu button!!</h2>
 </body>
+<script>
+    var playbutton = document.getElementById("hamburger");
+    
+
+    function move() {
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+    playbutton.style.position = 'absolute';
+    playbutton.style.top = y + "px";
+    playbutton.style.left = x + "px";
+    
+}
+</script>
 </html>

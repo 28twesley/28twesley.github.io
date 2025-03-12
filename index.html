@@ -1,45 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my super amazing website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link id="style" rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js"></script>
+  <title>Welcome!</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 </head>
 <style>
-    #hamburger{
-        transition-duration: 1s;
-    }
-</style>
-<body>
-    <div id="toolbar">
-        <div id="buttons">
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="#" onclick="switchmode()">Mode</a> |
-            <a href="game/index.html">Get to School</a> &nbsp;
-        </div>
-        <div id="hamburger">
-            &nbsp;<a href="#" onclick="showhide(), move()",>☰</a>
-        </div>
-    </div>
-        <h1 id="welcome">Hello! Welcome to my super duper amazing website!</h1>
-        <h2 id="find">have fun chasing the menu button!!</h2>
-</body>
-<script>
-    var playbutton = document.getElementById("hamburger");
-    
+  @font-face {
+    font-family: 'win95';
+    src: url('W95FA.woff2') format('woff2');
+  }
 
-    function move() {
-    let x = Math.random() * window.innerWidth;
-    let y = Math.random() * window.innerHeight;
-    playbutton.style.position = 'absolute';
-    playbutton.style.top = y + "px";
-    playbutton.style.left = x + "px";
-    
-}
-</script>
+  body {
+    font-family: 'win95', sans-serif;
+  }
+</style>
+
+<body>
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">just a website</div>
+      <div class="title-bar-controls">
+
+
+        <a type="button">
+          <img src="./images/we95mini.gif" class="minimize">
+        </a>
+        <a type="button">
+          <img src="./images/we95maxi.gif" class="maximize">
+        </a>
+
+
+        <a type="button" href="blank.html">
+          <img src="./images/we95clos.gif" class="close" alt="Close">
+        </a>
+
+      </div>
+    </div>
+
+    <div class="window-body">
+      <p>Welcome! Please click this button!</p>
+
+      <a type="button" href="about.html" id="alertButton"> Click Me!
+      </a>
+    </div>
+
+  </div>
+
+  <div class="taskbar">
+    <a>
+      <img src="./images/westartb.gif" class="start-button">
+    </a>
+  </div>
+
+  <script src="features.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,126 @@
+body {
+    background-color: #018281 ;
+    font-family: 'win95', sans-serif;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8d8d8d;
+    border-top: 2px outset #dfdfdf;
+    padding: 2px;
+}
+.button {
+    border: 2px outset #dfdfdf;
+    background-color: #dfdfdf;
+    padding: 2px 6px;
+    cursor: pointer;
+    font-family: 'win95', sans-serif;
+  }
+  
+  .button:active {
+    border: 2px inset #dfdfdf;
+  }
+  
+  .window {
+    width: 400px;
+    margin: 50px auto;
+    border: 2px outset #dfdfdf;
+    background-color: #dfdfdf;
+  }
+  
+  .title-bar {
+    background-color: #000080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+  }
+  
+  .title-bar-text {
+    padding-left: 4px;
+    font-family: 'win95', sans-serif;
+  }
+  
+  .title-bar-controls button {
+    background-color: #c0c0c0;
+    border: 1px outset #dfdfdf;
+    padding: 0 4px;
+    margin-left: 2px;
+    color: black;
+  }
+  
+  .window-body {
+    padding: 10px;
+    font-family: 'win95', sans-serif;
+  }
+  
+  .taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8d8d8d;
+    border-top: 2px outset #dfdfdf;
+    padding: 2px;
+  }
+  
+  .start-button {
+    padding: 4px 10px;
+  }
+
+  .window {
+    width: 300px;
+    border: 2px outset gray;
+    background-color: lightgray;
+    font-family: sans-serif;
+    
+  }
+  
+  .title-bar {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+  }
+  
+.maximize .close{
+  display: inline-block;
+}
+
+#alertButton{
+  font-family: 'win95', sans-serif;
+}
+
+.window {
+  position: relative;
+}
+
+#alertButton{
+  display: inline-block;
+  background-color: #dfdfdf;
+  border: 4px outset #dfdfdf;
+  padding: 1px 5px;
+  text-decoration: none;
+  color: black; 
+  font-family: 'win95', sans-serif;
+}s
+
+#alertButton-link:active {
+  border: 2px inset #dfdfdf;
+}
+
+
+.music{
+  color:#800080;
+  font-size: 17px;
+  text-align: left;
+}
+
+@font-face {
+    font-family: 'win95';
+    src: url('W95FA.woff2') format('woff2');
+}

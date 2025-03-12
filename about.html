@@ -2,90 +2,112 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me i guess</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>About Me</title>
+    <link rel="stylesheet" href="stylesheets/aboutstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <style>
+        @font-face {
+            font-family: 'win95';
+            src: url('W95FA.woff2') format('woff2');
+        }
 
+        body {
+            font-family: 'win95', sans-serif;
+        }
+    </style>
 </head>
-<script src="js/scripts.js"></script>
 
-<style>
-    li:hover{
-        background-color: rgb(5, 133, 238);
-    }
-</style>
-<body style="background-color: #ffd1dc;">
-    <div id="toolbar">
-        <div id="buttons">
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="#">Mode</a> |
-            <a href="game/index.html">Get to School</a>
+<body>
+
+    <div class="window">
+        <div class="title-bar" data-x="0" data-y="0">
+            <div class="title-bar-text">favorite-music.mp3</div>
+            <div class="title-bar-controls">
+
+
+                <a type="button">
+                    <img src="./images/we95mini.gif" class="minimize">
+                </a>
+                <a type="button">
+                    <img src="./images/we95maxi.gif" class="maximize">
+                </a>
+
+
+                <a type="button" href="blank.html">
+                    <img src="./images/we95clos.gif" class="close" alt="Close">
+                </a>
+
+            </div>
         </div>
-        <div id="hamburger">
-            <a href="#" onclick="showhide(), move()">☰</a>
+        <div class="window-body">
+            <div class="music">
+                <ul style="list-style: none;">
+                    <li><a href="https://www.youtube.com/watch?v=eufvkIFyDSQ" target="_blank" ,
+                            style="text-decoration: none;">sequoia - almost
+                            monday</a></li>
+
+                    <li><a href="https://www.youtube.com/watch?v=2v18oySsS58" target="_blank" ,
+                            style="text-decoration: none;">can't slow down -
+                            almost
+                            monday</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=EP-Ma1LVZFw" target="_blank" ,
+                            style="text-decoration: none;">seaside market -
+                            almost monday</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/watch?v=qwktJq6BVbY" target="_blank" ,
+                            style="text-decoration: none;">imperfect - lil
+                            darkie</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=DPn1jwz3Wqk" target="_blank" ,
+                            style="text-decoration: none;">mr loverman -
+                            ricky montgomery</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <h1 class="about">about me</h1>
 
-    <div class="me">
-        <h3>i like coding i guess i dont really know</h3>
-        <p>avid researcher of new ideas</p>
     </div>
-    <div class="music">
-        <div class="fav">
-            <h2 style=color:pink>favorite songs at the moment</h2>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">game.exe</div>
+            <div class="title-bar-controls">
+
+
+                <a type="button">
+                    <img src="./images/we95mini.gif" class="minimize">
+                </a>
+                <a type="button">
+                    <img src="./images/we95maxi.gif" class="maximize">
+                </a>
+
+
+                <a type="button" href="blank.html">
+                    <img src="./images/we95clos.gif" class="close" alt="Close">
+                </a>
+
+            </div>
         </div>
 
-        <ul>
-            <li class="sequoia"><a href="https://www.youtube.com/watch?v=eufvkIFyDSQ" target="_blank", style="text-decoration: none;">sequoia - almost
-                    monday</a></li>
+        <div class="window-body">
+            <p>Click here to play my game!</p>
 
-            <li class="sequoia"><a href="https://www.youtube.com/watch?v=2v18oySsS58" target="_blank", style="text-decoration: none;">can't slow down -
-                    almost
-                    monday</a></li>
-            <li class="sequoia"><a href="https://www.youtube.com/watch?v=EP-Ma1LVZFw" target="_blank", style="text-decoration: none;">seaside market -
-                    almost monday</a>
-            </li>
-            <li class="sequoia"><a href="https://www.youtube.com/watch?v=qwktJq6BVbY" target="_blank", style="text-decoration: none;">imperfect - lil
-                    darkie</a></li>
-            <li class="sequoia"><a href="https://www.youtube.com/watch?v=DPn1jwz3Wqk" target="_blank", style="text-decoration: none;">mr loverman -
-                    ricky montgomery</a>
-            </li>
-        </ul>
-    </div>
-    <div class="computer">
-        <div class="e">
-        <h2>computer specs</h2>
-    </div>
-        <h3>Intel Core i5</h3>
-        <h3>Nvdia 1650 i think</h3>
-        <h3>MSI g563 thin laptop</h3>
-        <h3></h3>
+            <a type="button" href="./game/index.html" id="alertButton"> Get to School 6
+            </a>
+        </div>
+
     </div>
 
 
-    <div id="popup" style="display:none;"> This feature does not work yet!</div>
+    <div class="taskbar">
+        <a>
+            <img src="./images/westartb.gif" class="start-button">
+        </a>
+    </div>
+
+    <script src="features.js"></script>
+
+    <div class="taskbar">
 </body>
-<script>
-    var playbutton = document.getElementById("hamburger");
-    
 
-    function move() {
-    let x = Math.random() * window.innerWidth;
-    let y = Math.random() * window.innerHeight;
-    playbutton.style.position = 'absolute';
-    playbutton.style.top = y + "px";
-    playbutton.style.left = x + "px";
-}
-
-</script>
 </html>

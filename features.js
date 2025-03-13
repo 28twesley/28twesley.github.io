@@ -81,7 +81,7 @@ interact('.window')
 
             // minimum size
             interact.modifiers.restrictSize({
-                min: { width: 170, height: 170 }
+                min: { width: 170, height: 120 }
             })
         ],
 

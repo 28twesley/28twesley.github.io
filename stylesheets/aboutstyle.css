@@ -63,7 +63,7 @@ body {
     left: 0;
     width: 100%;
     background-color: #8d8d8d;
-    border-top: 2px outset #dfdfdf;
+    border-top: 3px outset #dfdfdf;
     padding: 2px;
   }
   
@@ -118,6 +118,13 @@ body {
   color:#800080;
   font-size: 17px;
   text-align: left;
+  text-decoration: none;
+}
+
+.back{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @font-face {
